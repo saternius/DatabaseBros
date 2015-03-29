@@ -3,7 +3,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta charset="utf-8">
-		<title>Dashboard - Ace Admin</title>
+		<title>Councillor - DatabaseBros</title>
 
 		<meta name="description" content="overview &amp; stats">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -12,6 +12,10 @@
 		<link rel="stylesheet" href="Theft_files/bootstrap.css">
 		<link rel="stylesheet" href="Theft_files/font-awesome.css">
 		<link rel="stylesheet" href="css/style.css">
+		
+		
+	
+ 
 
 		<!-- page specific plugin styles -->
 
@@ -40,7 +44,14 @@
 		<script src="dist/js/html5shiv.min.js"></script>
 		<script src="dist/js/respond.min.js"></script>
 		<![endif]-->
-	<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+	<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
+	
+	<script src='Calendar/Munchkins/js/JareUtils.js'></script>
+	<script src='Calendar/Munchkins/js/FPSMeter.js'></script>
+	<script src='Calendar/Munchkins/js/GameLoopManager.js'></script>
+	<script src='Calendar/Munchkins/code.js'></script>
+		
+</head>
 
 	<body class="no-skin">
 		<div id="navbar" class="navbar navbar-default">
@@ -145,8 +156,8 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul style="top: 0px;" class="nav nav-list">
-					<li class="active">
-						<a href="http://responsiweb.com/themes/preview/ace/1.3.3/index.html">
+					<li class="">
+						<a href="Theft.htm">
 							<i class="menu-icon fa fa-desktop"></i>
 							<span class="menu-text"> Overview and Stats </span>
 						</a>
@@ -154,7 +165,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-calendar"></i>
 							<span class="menu-text">
@@ -166,9 +177,9 @@
 
 						<b class="arrow"></b>
 
-						<ul style="display: none;" class="submenu nav-hide">
+						<ul style="display: block;" class="submenu nav-show">
 							
-							<li class="">
+							<li class="active">
 								<a href="Councillor.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Plan Next Semester
@@ -198,47 +209,7 @@
 							
 								<b class="arrow"></b>
 
-								<ul class="submenu">
-									<li class="">
-										<a href="#">
-											<i class="menu-icon fa fa-leaf green"></i>
-											Item #1
-										</a>
-
-										<b class="arrow"></b>
-									</li>
-
-									<li class="">
-										<a href="#" class="dropdown-toggle">
-											<i class="menu-icon fa fa-pencil orange"></i>
-
-											4th level
-											<b class="arrow fa fa-angle-down"></b>
-										</a>
-
-										<b class="arrow"></b>
-
-										<ul class="submenu">
-											<li class="">
-												<a href="#">
-													<i class="menu-icon fa fa-plus purple"></i>
-													Add Product
-												</a>
-
-												<b class="arrow"></b>
-											</li>
-
-											<li class="">
-												<a href="#">
-													<i class="menu-icon fa fa-eye pink"></i>
-													View Products
-												</a>
-
-												<b class="arrow"></b>
-											</li>
-										</ul>
-									</li>
-								</ul>
+								
 							</li>
 						</ul>
 					</li>
@@ -289,7 +260,8 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li class="active">Councillor</li>
+							<li class="active">Plan Next Semester</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -372,261 +344,268 @@
 
 						<div class="page-header">
 							<h1>
-								Dashboard
+								Councillor
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									overview &amp; stats
+									Plan &amp; Next &amp; Semester
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
 
+	
+						<!-- CONTENT GOES HERE -->
 						
-						<div class="alerty alert-block alert-success">
-									<button type="button" class="close" data-dismiss="alert">
+							
+						
+							<div class = "col-md-4">
+								<p id="credits">
+								&nbsp;&nbsp;Classes Selected - 9 Hours:
+								</p>
+								<br>
+							<!--greenBox-->
+							<div class="alert-council alert-block alert-success">
+				
+							     <div class="col-md-2">
+									<i class="ace-icon fa fa-check green"></i>
+							     </div>
+								 <div class="col-md-8">
+									<div align="center">
+									<p class="green_box_text">
+									CS210 (3)
+									</p>
+									
+									
+										CRN:&nbsp;3181923
+										MWF&nbsp;9-10:30
+									
+									</div>
+								  </div>
+								  <div class="col-md-2">
+									<div align="right">
+									<button class="close" data-dismiss="alert" type="button">
 										<i class="ace-icon fa fa-times"></i>
 									</button>
-
-									<i class="ace-icon fa fa-check green"></i>
-
-									Successfully uploaded
-									<strong class="green">
-										DARS
-										
-									</strong>,
-	You can now view all your accredited  classes below.
-								</div>
-								<br>
-						<!-- CONTENT GOES HERE -->
-						<p id="credits">
-						&nbsp;&nbsp;&nbsp;&nbsp;Credits: 102/120
-						</p>
-						 <div align = "center">
-						
-						<div class = "col-md-10">
-						  <div class="col-md-3">
-							<p class="level_disp">
-								100 Level
-							</p>
-							
-							
-							<!--greenBox-->
-							<div class="alert alert-block alert-success">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-check green"></i>
-							</div>
-									<p class="green_box_text">
-									CS100
-									</p>
+									</div>
+								   </div>
+								   
 								</div>
 							<!--endOfGreenBox-->
 							
+							<br>
 							<!--greenBox-->
-							<div class="alert alert-block alert-success">
-							  <div class="col-md-1">
+							<div class="alert-council alert-block alert-success">
+				
+							     <div class="col-md-2">
 									<i class="ace-icon fa fa-check green"></i>
-							</div>
+							     </div>
+								 <div class="col-md-8">
+									<div align="center">
 									<p class="green_box_text">
-									CS125
+									CS357 (3)
 									</p>
+									
+									
+										CRN:&nbsp;3623423
+										TTHR&nbsp;9:30-10:20
+									
+									</div>
+								  </div>
+								  <div class="col-md-2">
+									<div align="right">
+									<button class="close" data-dismiss="alert" type="button">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+									</div>
+								   </div>
+								   
 								</div>
 							<!--endOfGreenBox-->
-							
-							
-							<!--greenBox-->
-							<div class="alert alert-block alert-success">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-check green"></i>
-							</div>
-									<p class="green_box_text">
-									CS173
-									</p>
-								</div>
-							<!--endOfGreenBox-->
-							
-						  </div>
-						  <div class="col-md-3">
-							<p class="level_disp">
-								200 Level
-							</p>
-							
-							
-							<!--redBox-->
-							<div class="alert alert-block alert-danger">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-close red"></i>
-							</div>
-									<p class="red_box_text">
-									CS210
-									</p>
-								</div>
-							<!--endOfRedBox-->
-							
-							<!--greenBox-->
-							<div class="alert alert-block alert-success">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-check green"></i>
-							</div>
-									<p class="green_box_text">
-									CS225
-									</p>
-								</div>
-							<!--endOfGreenBox-->
-							
-							
-							<!--greenBox-->
-							<div class="alert alert-block alert-success">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-check green"></i>
-							</div>
-									<p class="green_box_text">
-									CS233
-									</p>
-								</div>
-							<!--endOfGreenBox-->
-							
-							<!--greenBox-->
-							<div class="alert alert-block alert-success">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-check green"></i>
-							</div>
-									<p class="green_box_text">
-									CS241
-									</p>
-								</div>
-							<!--endOfGreenBox-->
-							
-							<!--greenBox-->
-							<div class="alert alert-block alert-success">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-check green"></i>
-							</div>
-									<p class="green_box_text">
-									CS242
-									</p>
-								</div>
-							<!--endOfGreenBox-->
-							
+							<br>
 							
 							<!--blueBox-->
-							<div class="alert alert-block alert-info">
-							  <div class="col-md-1">
+							<div class="alert-council alert-block alert-info">
+				
+							     <div class="col-md-2">
 									<i class="ace-icon fa fa-circle blue"></i>
-							</div>
+							     </div>
+								 <div class="col-md-8">
+									<div align="center">
 									<p class="blue_box_text">
-									CS242
+									ART100 (3)
 									</p>
+									
+									
+										CRN:&nbsp;5234223
+										MWF&nbsp;8-9
+									
+									</div>
+								  </div>
+								  <div class="col-md-2">
+									<div align="right">
+									<button class="close" data-dismiss="alert" type="button">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+									</div>
+								   </div>
+								   
 								</div>
 							<!--endOfBlueBox-->
+							<br>
 							
-							
-						  </div>
-						  <div class="col-md-3">
-							<p class="level_disp">
-								300 Level
+							<p id="credits">
+								&nbsp;&nbsp;Add Class:
 							</p>
+							<input class="form-control add-class" id="inputdefault" type="text" value="CRN">
 							
-							
-							<!--redBox-->
-							<div class="alert alert-block alert-danger">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-close red"></i>
 							</div>
-									<p class="red_box_text">
-									CS357
+							<div class = "col-md-4">
+								<!--CENTER PANE-->
+								<div align = 'center'>
+								 <canvas id='screen' width='325' height='455'  ></canvas>
+								  </div>
+								<div id="fpscontainer"></div>
+								
+								
+								
+								
+								
+								
+							</div>
+							<div class = "col-md-4">
+								<p id="credits">
+								Suggested Classes:
+								</p>
+								<br>
+								<!--greenBox-->
+							<div class="alert-council alert-block alert-success">
+				
+							     <div class="col-md-2">
+									<i class="ace-icon fa fa-check green"></i>
+							     </div>
+								 <div class="col-md-8">
+									<div align="center">
+									<p class="green_box_text">
+									CS374 (3)
 									</p>
+									
+									
+										CRN:&nbsp;5231323
+										MWF&nbsp;1-2:30
+									
+									</div>
+								  </div>
+								  <div class="col-md-2">
+									<div align="right">
+									<button class="close" data-dismiss="alert" type="button">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+									</div>
+								   </div>
+								   
 								</div>
-							<!--endOfRedBox-->
-							
-							<!--redBox-->
-							<div class="alert alert-block alert-danger">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-close red"></i>
-							</div>
-									<p class="red_box_text">
-									CS374
+							<!--endOfGreenBox-->
+							<br>
+								<!--greenBox-->
+							<div class="alert-council alert-block alert-success">
+				
+							     <div class="col-md-2">
+									<i class="ace-icon fa fa-check green"></i>
+							     </div>
+								 <div class="col-md-8">
+									<div align="center">
+									<p class="green_box_text">
+									CS415 (3)
 									</p>
+									
+									
+										CRN:&nbsp;5274635
+										MWF&nbsp;1-2:30
+									
+									</div>
+								  </div>
+								  <div class="col-md-2">
+									<div align="right">
+									<button class="close" data-dismiss="alert" type="button">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+									</div>
+								   </div>
+								   
 								</div>
-							<!--endOfRedBox-->
-							
-						  </div>
-						  <div class="col-md-3">
-							<p class="level_disp">
-								400 Level
-							</p>
-							
-								<!--yellowBox-->
-							<div class="alert alert-block alert-warning">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-stop yellow"></i>
-							</div>
-									<p class="yellow_box_text">
-									CS411
+							<!--endOfGreenBox-->
+								<br>
+								
+								<!--greenBox-->
+							<div class="alert-council alert-block alert-success">
+				
+							     <div class="col-md-2">
+									<i class="ace-icon fa fa-check green"></i>
+							     </div>
+								 <div class="col-md-8">
+									<div align="center">
+									<p class="green_box_text">
+									CS420 (3)
 									</p>
+									
+									
+										CRN:&nbsp;5232352
+										MWF&nbsp;1-2:30
+									
+									</div>
+								  </div>
+								  <div class="col-md-2">
+									<div align="right">
+									<button class="close" data-dismiss="alert" type="button">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+									</div>
+								   </div>
+								   
 								</div>
-							<!--endOfYellowBox-->
-							
-							
-							
-								<!--yellowBox-->
-							<div class="alert alert-block alert-warning">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-stop yellow"></i>
-							</div>
-									<p class="yellow_box_text">
-									CS440
+							<!--endOfGreenBox-->
+								<br>
+								<!--greenBox-->
+							<div class="alert-council alert-block alert-success">
+				
+							     <div class="col-md-2">
+									<i class="ace-icon fa fa-check green"></i>
+							     </div>
+								 <div class="col-md-8">
+									<div align="center">
+									<p class="green_box_text">
+									MTH420 (3)
 									</p>
+									
+									
+										CRN:&nbsp;8393743
+										MWF&nbsp;1-2:30
+									
+									</div>
+								  </div>
+								  <div class="col-md-2">
+									<div align="right">
+									<button class="close" data-dismiss="alert" type="button">
+										<i class="ace-icon fa fa-times"></i>
+									</button>
+									</div>
+								   </div>
+								   
 								</div>
-							<!--endOfYellowBox-->
-							
-							
-							<!--redBox-->
-							<div class="alert alert-block alert-danger">
-							  <div class="col-md-1">
-									<i class="ace-icon fa fa-close red"></i>
+							<!--endOfGreenBox-->
+								
+								
+								
 							</div>
-									<p class="red_box_text">
-									2 more 400 level classes
-									</p>
-								</div>
-							<!--endOfRedBox-->
+						
+					
 							
-						  </div>
-						  </div>
-							</div>
 						 
-						  <div class="col-md-2">
-							<p class="filter">
-								Filter:
-							</p>
-							<button class="btn btn-success">
-										<i class="ace-icon fa fa-check light-gray"></i>
-								CS Classes
-							</button>
-							
-							<button class="btn btn-info">
-								Math Classes
-							</button>
-
-							<button class="btn btn-warning">
-								Gen Eds
-							</button>
-
-							<button class="btn btn-danger">
-								Unsatisfied
-							</button>
-						
-						
-						  </div>
+						  
 						  
 						</div>
 						
-						</div>
-						<div align = 'center'>
-						<font color='gray'>Green boxes are required classes that you already completed.</font> <br>
-						<font color='gray'>Red boxes are required uncompleted classes.</font> <br>
-						<font color='gray'>Blue boxes are additional non-required classes you've taken. </font><br>
-						<font color='gray'>Yellow Boxes are what you are currently taking.</font>
-						</div>
+		
+						
 				</div>
 				
 			</div><!-- /.main-content -->

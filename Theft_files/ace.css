@@ -9,6 +9,22 @@ html{min-height:100%;position:relative}body{background-color:#e4e6e9;min-height:
 	width: 75%;
 }
 
+.alert-council{
+	font-size:14px;
+	border-radius:0;
+	padding-top: 5%;
+	padding-bottom: 25%;
+	padding-left: 0%;
+	padding-right: 5%;
+	margin-left: 5%;
+	width: 75%;
+}
+
+.add-class{
+	margin-left: 5%;
+	width: 75%;
+}
+
 
 .alert_red{
 	font-size:14px;
