@@ -37,8 +37,8 @@ FPSMeter.prototype.update = function (elapsed)
 		avg += o;
 	});
 	avg /= this.fpsArray.length;
-	this.fpst[0].textContent = "min: " + min.toFixed(3) + " max: " + max.toFixed(3);
-	this.fpst[1].textContent = "avg: " + avg.toFixed(3) + " fps: " + (1/avg).toFixed(0);
-	this.fpst[2].textContent = "current: " + elapsed.toFixed(3);
-	this.FramesPerSec =  (1/avg).toFixed(0);
+	this.fpst[0].textContent = "Total of 0 hours between classes";
+	//this.fpst[1].textContent = "avg: " + avg.toFixed(3) + " fps: " + (1/avg).toFixed(0);
+	//this.fpst[2].textContent = "current: " + elapsed.toFixed(3);
+	//this.FramesPerSec =  (1/avg).toFixed(0);
 }

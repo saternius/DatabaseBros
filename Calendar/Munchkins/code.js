@@ -28,7 +28,7 @@ var loose = false;
 var countdown = false;
 
 var imageObj = new Image();
-imageObj.src = '';
+imageObj.src = 'Calendar/Munchkins/images/Calandar.png';
 
 
 
@@ -37,7 +37,7 @@ imageObj.src = '';
 
 
 window.onload = function () {
-    
+    alert("This design is far to clustered for my liking. I have small change I wish to implement. Expected fin date: Monday at 11pm")
 	canvas = document.getElementById("screen");
     
 	ctx = canvas.getContext("2d");
@@ -52,31 +52,7 @@ canvas.addEventListener('click', function(evt) {
 	      var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
               mouseX = mousePos.x;
               mouseY= mousePos.y;
-			  if(mouseY<85){
-				countdown=!countdown;
-			  }
-			  if(mouseX<80){
-					if(mouseY>175 && mouseY<250){
-						level--;
-					}
-					if(mouseY>340 && mouseY<405){
-						strength--;
-					}
-			  }
-			  if(mouseX>250){
-				   if(mouseY>175 && mouseY<250){
-						level++;
-					}
-					if(mouseY>340 && mouseY<405){
-						strength++;
-					}
-			  }
-			  if(level<1){
-					level=1;
-			  }
-			  if(level>10){
-					level=10;
-			  }
+			
    
 	   }, false);
 	   
@@ -96,60 +72,14 @@ function GameTick(elapsed)
 {
 	fps.update(elapsed);
 
-	//clock functionality
-	if(countdown){
-	timer--;
-	}
-	if(timer<0){
-		timer=fps.FramesPerSec;
-		if(!loose){
-		seconds--;
-		if(seconds%60==59){
-		   minutes--;
-		}
-		if(seconds%60<=9){
-			timeDisp= minutes+":0"+seconds%60;
-		}else{
-			timeDisp= minutes+":"+seconds%60;
-		}
-		if(minutes==0 && seconds == 0){
-			loose= true;
-		}
-		}else{
-			timeDisp= "Loser";
-		}
-	}
 	
 	
-	ctx.fillStyle = "#ff00000";
+	
+	ctx.fillStyle = "#ffffff";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
-	//level++;
-	//strength++;
 	ctx.drawImage(imageObj, 0, 0);
 	
-	ctx.fillStyle = "#CACE11";
-	if(countdown){
-	ctx.fillRect(8, 6, 309, 65);
-	}
 	
-	ctx.fillStyle = "#1D3A60";
-	ctx.font = '35pt Lucida Console';
-	var shift = timeDisp.length*16;
-	ctx.fillText(timeDisp,172-shift,55);
-	
-	ctx.font = 'bold 35pt Calibri';
-	
-	if(level<10){
-		ctx.fillText(level, 155 , 225);
-	}else{
-		ctx.fillText("Winner",92,225);
-	}
-	
-	if(strength<10){
-		ctx.fillText(strength,155, 390);
-	}else{
-		ctx.fillText(strength,138, 390);
-	}
 }
 
 
