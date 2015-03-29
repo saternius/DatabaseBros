@@ -37,7 +37,7 @@ imageObj.src = 'Calendar/Munchkins/images/Calandar.png';
 
 
 window.onload = function () {
-    alert("This design is far to clustered for my liking. I have small change I wish to implement. Expected fin date: Monday at 11pm")
+   // alert("This design is far to clustered for my liking. I have small change I wish to implement. Expected fin date: Monday at 11pm")
 	canvas = document.getElementById("screen");
     
 	ctx = canvas.getContext("2d");
@@ -77,7 +77,7 @@ function GameTick(elapsed)
 	
 	ctx.fillStyle = "#ffffff";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
-	ctx.drawImage(imageObj, 0, 0);
+	ctx.drawImage(imageObj, 0, 0,canvas.width,canvas.height);
 	
 	
 }
