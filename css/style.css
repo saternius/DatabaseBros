@@ -1,0 +1,70 @@
+
+@font-face {
+   font-family: myFirstFont;
+   src: url('../fonts/light.ttf');
+}
+
+@font-face {
+   font-family: regVu;
+   src: url('../fonts/reg.ttf');
+}
+
+@font-face {
+   font-family: condy;
+   src: url('../fonts/condy.ttf');
+}
+
+#credits{
+	font-size: 20px;
+	font-family: myFirstFont;
+	color: #7988A2 !important;
+}
+p.level_disp{
+	font-size: 14px;
+	font-family: regVu;
+	color: #7988A2 !important;
+}
+p.filter{
+	font-size: 20px;
+	font-family: myFirstFont;
+	color: #788594 !important;
+}
+p.major_title{
+	font-size: 21px;
+	font-family: condy;
+	color: #00604C !important;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+p.green_box_text{
+	font-size: 20px;
+	font-family: myFirstFont;
+	color: #6F8F56 !important;
+}
+
+p.red_box_text{
+	font-size: 20px;
+	font-family: myFirstFont;
+	color: #B70000 !important;
+}
+
+p.blue_box_text{
+	font-size: 20px;
+	font-family: myFirstFont;
+	color: #03899E !important;
+}
+
+p.yellow_box_text{
+	font-size: 20px;
+	font-family: myFirstFont;
+	color: #B08900 !important;
+}
+
+
+img.major_icon{
+ width: 70%;
+ height: 70%;
+ padding-top: 15px;
+ 
+}
